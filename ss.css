@@ -3,6 +3,7 @@
         background-position: center;
         color: snow;
         background-clip:content-box;
+		overflow: visible;
  
            }
 	.z{
