@@ -107,6 +107,10 @@
     position: absolute;
     right: 20px;             /* Odstęp przycisku od prawej krawędzi */
 	}
+	aside .bat {             /* Przycisk cta  do prawej strony */
+    position: absolute;
+    left: 20px;             /* Odstęp przycisku od prawej krawędzi */
+	}
 
 	p{
 	margin:20px;
