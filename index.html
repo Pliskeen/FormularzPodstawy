@@ -1,67 +1,48 @@
 <html>
     <link rel="stylesheet" href="bing.css">
+    <link rel="stylesheet" href="ss.css">
         <head>
           <title> Index na lekcje Stacha</title>
            <style>
-           body{
-             background-image: url('indbg.jpg');
-             background-position: center;
-             color: snow;
-             background-clip:content-box;
-
-           }
-           .z{
-               display: flex;
-               flex-direction: column;
-               justify-content: center;
-               align-items: center;
-               height: 100vh;
-           }
+ 
            </style>
            <script language="JavaScript">
-function WinOpen_Form1()
- {
-window.open("Witryny/Formularz.html","okno_f1","toolbar=no,directories=no,menubar=no,height=380,width=260,top=200,left=200");
- }
-function WinOpen_Form2()
- {
-window.open("Witryny/inny formularz/Formularz.html","okno_f2","toolbar=no,directories=no,menubar=no,height=380,width=260,top=200,left=200");
- }
- function WinOpen_Form3()
-  {
- window.open("ZewnetrznyCSS/Formularz.html","okno_f3","toolbar=no,directories=no,menubar=no,height=380,width=260,top=200,left=200");
-  }
            </script>
+ 
         </head>
         <body>
-             <HR SIZE=2 WIDTH=95% ALIGN=LEFT COLOR=lightblue>
+		<header>PLISKEEN</header>
+             <HR SIZE=4 WIDTH=95% ALIGN=LEFT COLOR=lightblue>
+ 
             <div class="z">
           <form>
               <br><br>
-              <button class="frutiger-button" name="Form1" onclick="WinOpen_Form1()">
+              <button type="button" class="frutiger-button" name="Form1" onclick="window.location.href='Witryny/Formularz.html'">
                 <div class="inner">
                   <div class="top-white"></div>
                   <span class="text">Formularz 1</span>
                 </div>
+ 
               </button><br><br>
-
-              <button class="frutiger-button" name="Form2" onclick="WinOpen_Form2()">
+ 
+              <button type="button" class="frutiger-button" name="Form2" onclick="window.location.href='Witryny/inny formularz/Formularz.html'">
                 <div class="inner">
                   <div class="top-white"></div>
                   <span class="text">Formularz 2</span>
                 </div>
+ 
               </button><br><br>
-
-              <button class="frutiger-button" name="Form3" onclick="window.location.href='ZewnetrznyCSS/Formularz.html'">
+ 
+              <button type="button" class="frutiger-button" name="Form3" onclick="window.location.href='ZewnetrznyCSS/Formularz.html'">
                 <div class="inner">
                   <div class="top-white"></div>
                   <span class="text">Formularz 3</span>
                 </div>
+ 
               </button>
-
           </form>
             </div>
-            <HR SIZE=2 WIDTH=95% ALIGN=center COLOR=red>
+            <HR SIZE=4 WIDTH=95% ALIGN=center COLOR=red>
         </body>
-
+ 
 </html>
