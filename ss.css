@@ -1,0 +1,18 @@
+body{
+             background-image: url('indbg.jpg');
+             background-position: center;
+             color: snow;
+             background-clip:content-box;
+ 
+           }
+           .z{
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               height: 100vh;
+           }
+	   header{
+		font-family:courier;
+		text-align:center;
+}
