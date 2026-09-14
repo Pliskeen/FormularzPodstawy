@@ -4,7 +4,9 @@
         color: snow;
         background-clip:content-box;
 		overflow: visible;
- 
+		background-repeat: no-repeat;
+        background-size: cover;
+
            }
 	.z{
 		display: flex;
