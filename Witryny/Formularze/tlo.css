@@ -1,0 +1,22 @@
+
+body {
+  background-image: url('tlo.jpg');
+  background-size: cover;
+  background-position: center;
+  color: blue;
+  font-size: 16px;
+  align-items:center;
+  text-align:center;
+  align-content:center;
+  margin: 10px;
+}
+.ddd{
+    color:navajowhite;
+    font-size: 20px;
+    font-family:courier;
+}
+.stt{
+
+    padding:10px;
+    margin-top:10px auto;
+}

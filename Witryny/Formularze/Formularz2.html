@@ -1,0 +1,44 @@
+<html>
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+      <link rel="stylesheet" href="tlo.css">
+
+      <p class="ddd">Inputy </p>
+<form action="formularz1.php" method="GET" >
+Podaj swoje imię<input type="text" name="imie"><br>
+Podaj swoje nazwisko<input name="nazwisko"><br>
+ile masz lat    <input type="number" name="wiek"><br>
+podaj klase do ktorej chodzisz<input type="text" name="klasa"><br>
+<br>
+<p class='ddd'>Radio służy do wybierania tylko jednej opcji dla danego name-a</p>
+<p> w jaki sposob masz podlaczony komputer do internetu<br> przez:<br> </p>
+<input type="radio" name="typ" value="wifi">wifi<br>
+<input type="radio" name="typ" value="eth">ethernet<br>
+<br>
+<p class='ddd'>Checkbox słuzży do wybierania wielu opcji</p>
+<p>jakie z tych kolorów lubisz</p>
+<input type="checkbox" name="kolor1" value="czerwony">czerwony<br>
+<input type="checkbox" name="kolor2" value="niebieski">niebieski<br>
+<input type="checkbox" name="kolor3" value="zolty">zolty<br>
+<input type="checkbox" name="kolor4" value="zielony">zielony <br>
+
+
+
+<br>
+<p class='ddd'>wiadomo co robi select nie ma co opisywac </p>
+<p>Z jakiej poczty korzystasz?</p><br>
+<select name="poczta"> <br>
+	<option selected value="Chomik">gmail</option>
+	<option value="Opera">microsoft</option>
+	<option value="Opera">yahoo</option>
+	<option value="Opera">zadna z powyzej wymienionych</option>
+
+</select>
+<br><br><br>
+<input type="submit" value="Wyślij formularz">
+<!-- Przycisk WYCZYŚĆ DANE -->
+<input type="reset" value="Wyczyść dane">
+</form>
+<p class="stt">Alan Milcewicz 4F</p>
+</html>
