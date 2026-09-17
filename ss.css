@@ -13,14 +13,14 @@ body {
 }
 /* Kontener główny - teraz stanowi punkt odniesienia dla przycisków */
 .z {
-    position: relative; /* Kluczowa zmiana: przyciski będą się trzymać tego kontenera */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    padding-bottom: 5vh;
+    
+    position: relative;
+    min-height: 100vh;
+    background-image: url("img/Halupscale2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 }
 
 /* Przyciski wypozycjonowane procentowo względem tła */
