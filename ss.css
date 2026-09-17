@@ -1,118 +1,188 @@
-	body{
-        background-image: url('img/Hal.jpg');
-        background-position: center;
-        color:#efede3;
-        background-clip:border-box;
-		overflow: visible;
-		background-repeat: no-repeat;
-        background-size: cover;
-        margin: 0;
-        padding: 0;
-        font-family: inter18italic;
-           }
 
-	.z{
-		display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-           }
+body {
+    background-image: url('img/Halupscale2.png');
+    background-position: center;
+    color: #efede3;
+    background-clip: border-box;
+    overflow: visible;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: inter18italic;
+}
+/* Kontener główny - teraz stanowi punkt odniesienia dla przycisków */
+.z {
+    position: relative; /* Kluczowa zmiana: przyciski będą się trzymać tego kontenera */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding-bottom: 5vh;
+}
 
-	footer{
-		text-align:center;
-		background-color: rgba(48, 47, 44, 0.85);	/*background-color:#302f2c;*/
-		backdrop-filter: blur(8px); /*blur do stopki*/
-		position: relative;
-		width:100%;
-		margin-top: auto;
-        padding: 25px 0;   /* Dodaje 25px przestrzeni na górze i na dole stopki */
-        box-sizing: border-box;
-	}
-	footer p {
-        margin: 0;
-        padding: 0;
+/* Przyciski wypozycjonowane procentowo względem tła */
+/* WARTOŚCI top I left MOŻESZ DOWOLNIE ZMIENIAĆ (np. top: 45%), ABY TRAFIĆ W PUNKT NA OBRAZKU */
+.przycisk {
+    position: absolute;
+    top: 55%;                         /* Pozycja w pionie (od góry) */
+    left: 12%;                        /* Pozycja w poziomie (od lewej) */
+    transform: translate(-50%, -50%); /* Centruje przycisk w wybranym punkcie */
+}
 
-        /* neon */
-        color: #fff;          /* Neon wygląda najlepiej na białym lub bardzo jasnym tekście */
+.przycisk2 {
+    position: absolute;
+    top: 55%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+}
 
-        text-shadow:           /* 4 warstwy cienia do neonu */
-          0 0 4px #efede3,   /* Jasny, wewnętrzny blask (kolor Twojej strony) */
-          0 0 10px #efede3,  /* Średnie rozmycie */
-          0 0 20px #efedee,  /* Szeroka poświata (tutaj przykładowy neonowy róż/magenta) */
-          0 0 40px #efedee;  /* Bardzo szerokie rozmycie tła */
-	}
+.przycisk3 {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.przycisk4 {
+    position: absolute;
+    top: 63%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+}
+.przycisk5 {
+    position: absolute;
+    top: 50%;
+    left: 82%;
+    transform: translate(-50%, -50%);
+}
+.przycisk6 {
+    position: absolute;
+    top: 51%;
+    left: 91%;
+    transform: translate(-50%, -50%);
+}
 
-	footer .smiley{
-	    position: absolute;
-		right: 70px;       /* Odległość od prawej krawędzi strony */
-		top: 50%;
-		height:0;
-		transform: translateY(-50%); /* Zmniejsza wychylenie buzki od dolu od tego os y czyli taki jakby joystick do ruszania*/
-        display:flex;
-        background-color: rgba(48, 47, 44, 0.85);	/*background-color:#302f2c;*/
-        backdrop-filter: blur(8px); /*blur do stopki*/
-        align-items:center;
-        margin-top: auto;
-	}
+footer {
+    text-align: center;
+    background-color: rgba(48, 47, 44, 0.85);
+    backdrop-filter: blur(8px);
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+    padding: 25px 0;
+    box-sizing: border-box;
+}
 
-	footer .smiley img {
-        width: 150px;       /* Ustaw szerokość obrazka (dostosuj według uznania) */
-        height: auto;      /* Automatyczna wysokość zachowa proporcje */
-        display: block;
-        transform: translateY(-30%);
+footer p {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-shadow:
+      0 0 4px #efede3,
+      0 0 10px #efede3,
+      0 0 20px #efedee,
+      0 0 40px #efedee;
+}
 
-	}
-	/*footer hr{
-		width: 100%;
-		height:4px;
-		border:none;
-		background-color:#302f2c;
-		margin: 0 auto;
-	}
-	*/
+footer .smiley {
+    position: absolute;
+    right: 70px;
+    top: 50%;
+    height: 0;
+    transform: translateY(-50%);
+    display: flex;
+    background-color: rgba(48, 47, 44, 0.85);
+    backdrop-filter: blur(8px);
+    align-items: center;
+    margin-top: auto;
+}
 
-	header{
-	    text-align:center;
-	}
-	header hr{
-		width:25%;
-		height:4px;
-		border:none;
-		background-color:snow;
-		margin: 0 auto;
-	}
-	aside {
-        position: sticky;  /* Element przykleja się podczas przewijania */
-        top: 0;            /* Przyklei się równo z górną krawędzią ekranu */
-        width: 100%;
-        height: 40px;
-        background-color: rgba(239, 237, 227, 0.4); /*#efede3*/
-        backdrop-filter: blur(8px);
-        color: #302f2c;
+footer .smiley img {
+    width: 150px;
+    height: auto;
+    display: block;
+    transform: translateY(-30%);
 
-        display: flex;
-        justify-content: center; /* Centruje główną zawartość (tekst) */
-        align-items: center;     /* Centruje elementy w pionie */
-        box-sizing: border-box;  /* Zabezpiecza padding przed rozciąganiem paska */
-        padding: 0 20px;         /* Dodaje bezpieczny odstęp od lewej i prawej krawędzi ekranu */
-	}
+}
+
+header {
+    text-align: center;
+    justify-content: center;
+
+}
+
+header hr {
+    width: 25%;
+    height: 4px;
+    border: none;
+    background-color: snow;
+    margin: 0 auto;
+}
+
+aside {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(239, 237, 227, 0.4);
+    backdrop-filter: blur(8px);
+    color: #302f2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+aside .cta {
+    position: absolute;
+    right: 20px;
+}
+
+aside .bat {
+    position: absolute;
+    left: 20px;
+}
+
+p {
+    margin: 20px;
+    padding-top: 15px;
+}
+
+@font-face {
+    font-family: inter18italic;
+    src: url('Font/Inter_18pt-BlackItalic.ttf');
+}
+.nlo{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.dox{
+    justify-content: space-between;
+    padding-inline:30%;
+}
 
 
-	aside .cta {             /* Przycisk cta  do prawej strony */
-        position: absolute;
-        right: 20px;             /* Odstęp przycisku od prawej krawędzi */
-	}
-	aside .bat {             /* Przycisk cta  do prawej strony */
-        position: absolute;
-        left: 20px;             /* Odstęp przycisku od prawej krawędzi */
-	}
 
-	p{
-	    margin:20px;
-		padding-top:15px;
-	}
-	@font-face {
-        font-family: inter18italic;
-        src: url('Font/Inter_18pt-BlackItalic.ttf');
-	}
+
+/*body {
+    margin: 0;
+    padding: 0;
+    color: #efede3;
+    font-family: inter18italic;
+    background: #302f2c;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    background-image: url('img/Halupscale2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*/
