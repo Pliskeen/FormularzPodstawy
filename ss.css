@@ -1,23 +1,27 @@
 
 body {
-       min-height: 100vh;
+    background-image: url('img/Halupscale2.png');
+    background-position: center;
+    color: #efede3;
+    background-clip: border-box;
+    overflow: visible;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
     padding: 0;
-    color: #efede3;
     font-family: inter18italic;
-    background-color: #302f2c;
 }
 /* Kontener główny - teraz stanowi punkt odniesienia dla przycisków */
 .z {
-    
-    position: relative;
-    min-height: 100vh;
-    background-image: url("img/Halupscale2.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: relative; /* Kluczowa zmiana: przyciski będą się trzymać tego kontenera */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding-bottom: 5vh;
 }
-
 
 /* Przyciski wypozycjonowane procentowo względem tła */
 /* WARTOŚCI top I left MOŻESZ DOWOLNIE ZMIENIAĆ (np. top: 45%), ABY TRAFIĆ W PUNKT NA OBRAZKU */
