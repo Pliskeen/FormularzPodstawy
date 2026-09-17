@@ -1,15 +1,11 @@
 
 body {
-    background-image: url('img/Halupscale2.png');
-    background-position: center;
-    color: #efede3;
-    background-clip: border-box;
-    overflow: visible;
-    background-repeat: no-repeat;
-    background-size: cover;
+       min-height: 100vh;
     margin: 0;
     padding: 0;
+    color: #efede3;
     font-family: inter18italic;
+    background-color: #302f2c;
 }
 /* Kontener główny - teraz stanowi punkt odniesienia dla przycisków */
 .z {
