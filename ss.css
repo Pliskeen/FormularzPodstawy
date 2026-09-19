@@ -1,32 +1,35 @@
 
 body {
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    color: #efede3;
-    font-family: inter18italic;
-   background-color:#2AA360;/*background-color:#C6C3B5;*/
-
-}
-/* Kontener głowny -stanowi punkt odniesienia dla przyciskow */
-.z {
-
-    position: relative;
-    min-height: 100vh;
-    background-image: url("img/Halupscale2.png");
+    background-image: url('img/Halupscale2.png');
     background-position: center;
+    color: #efede3;
+    background-clip: border-box;
+    overflow: visible;
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: inter18italic;
+}
+/* Kontener główny - teraz stanowi punkt odniesienia dla przycisków */
+.z {
+    position: relative; /* Kluczowa zmiana: przyciski będą się trzymać tego kontenera */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding-bottom: 5vh;
 }
 
-
-/* przyciski wyprocentowane wzgledem tla z kontenera z*/
-/* zmiana pozycji - top, left */
+/* Przyciski wypozycjonowane procentowo względem tła */
+/* WARTOŚCI top I left MOŻESZ DOWOLNIE ZMIENIAĆ (np. top: 45%), ABY TRAFIĆ W PUNKT NA OBRAZKU */
 .przycisk {
     position: absolute;
-    top: 55%;                         /* jak daleko od gory */
-    left: 12%;                        /* jak daleko od lewej */
-    transform: translate(-50%, -50%); /* centrowanie przycisku  */
+    top: 55%;                         /* Pozycja w pionie (od góry) */
+    left: 12%;                        /* Pozycja w poziomie (od lewej) */
+    transform: translate(-50%, -50%); /* Centruje przycisk w wybranym punkcie */
 }
 
 .przycisk2 {
