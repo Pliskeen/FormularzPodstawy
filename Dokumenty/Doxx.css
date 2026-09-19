@@ -2,6 +2,6 @@ body{
     background-image: url('../img/donald.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-color: crimson;
 }
