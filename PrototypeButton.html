@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Pop-Out Zombie Button</title>
+    <style>
+        /* Basic reset and centering for your testing page */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: sans-serif;
+        }
+
+        /* 1. The main card wrapper */
+        .popout-card {
+            position: relative;
+            width: 600px;
+            height: 600px;
+            margin-top: 100px; /* Gives space for the head to pop upwards */
+            cursor: pointer;
+        }
+
+        /* 2. The background frame (The resort/pool scene) */
+        .card-background {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 380px; /* Shorter than wrapper to leave room for the head */
+            background-image: url('zombie-silhouette.jfif'); /* Your pool scene file */
+            background-size: cover;
+            background-position: center;
+            border: 4px solid #fff;
+            border-radius: 12px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            overflow: hidden; /* Keeps the background elements strictly inside the frame */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            z-index: 1;
+        }
+
+        /* 3. The isolated full-color zombie layer */
+        .zombie-character {
+            position: absolute;
+            bottom: 4px; /* Aligns perfectly with the bottom border of the frame */
+            left: 50%;
+            transform: translateX(-50%) scale(1);
+            width: auto;
+            height: 380px; /* Taller than the background frame so it sticks out */
+            z-index: 2; /* Sits directly in front of the background border */
+
+            /* Crucial: Ignores transparent pixel clicks */
+            pointer-events: auto;
+
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        /* --- HOVER EFFECTS (The Pop-Out Action) --- */
+
+        /* When hovering anywhere over the card wrapper... */
+        .popout-card:hover .card-background {
+            transform: translateY(5px); /* Slightly drops background to enhance depth */
+            box-shadow: 0 20px 40px rgba(255, 0, 0, 0.2);
+            border-color: crimson; /* Crimson edge switch */
+        }
+
+        .popout-card:hover .zombie-character {
+            /* Scales the zombie up and pushes him forward slightly */
+            transform: translateX(-50%) scale(1.1) translateY(-10px);
+
+            /* Gives the pop-out character a realistic silhouette shadow onto the page */
+            filter: drop-shadow(0 20px 15px rgba(0, 0, 0, 0.7));
+        }
+
+        /* Smooth click action */
+        .popout-card:active .zombie-character {
+            transform: translateX(-50%) scale(1.05) translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- The Pop-Out Button Component -->
+    <div class="popout-card" role="button" onclick=window.location.href='https://deadislandgame.pl/' aria-label="Dead Island Button">
+
+        <!-- Layer 1: The background window -->
+        <div class="card-background"></div>
+
+        <!-- Layer 2: The transparent cutout zombie overlapping the top edge -->
+        <img src="zombie-silhouette.png" alt="Zombie character" class="zombie-character">
+
+    </div>
+
+</body>
+</html>
