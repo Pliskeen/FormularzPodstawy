@@ -7,8 +7,9 @@ body {
     font-family: inter18italic;
    background-color:#2AA360;/*background-color:#C6C3B5;*/
 
+
 }
-/* Kontener głowny -stanowi punkt odniesienia dla przyciskow */
+/* Kontener glowny -stanowi punkt odniesienia dla przyciskow */
 .z {
 
     position: relative;
@@ -64,12 +65,15 @@ body {
 footer {
     text-align: center;
     background-color: rgba(48, 47, 44, 0.85);
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(10px);
     position: relative;
     width: 100%;
     margin-top: auto;
     padding: 25px 0;
     box-sizing: border-box;
+
+
+
 }
 
 footer p {
@@ -81,6 +85,7 @@ footer p {
       0 0 10px #efede3,
       0 0 20px #efedee,
       0 0 40px #efedee;
+
 }
 
 footer .smiley {
@@ -155,13 +160,59 @@ p {
 .nlo{
     text-align: center;
     padding-bottom: 10px;
+
+
 }
 .dox{
     justify-content: space-between;
     padding-inline:30%;
 }
+.padding1{
+
+    border-bottom: 5px solid #272727;
+}
+.padding2{
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    background-image: url('img/hal3.png') ;
+}
+.kingpin{
+    border-top: 5px solid #272727;
+    border-bottom: 5px solid #272727;
+    padding-top:10px;
+    padding-bottom:10px;
+    position:relative;
+    justify-content: top;
+    text-align: center;
 
 
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    background-image: url('img/hal3.png') ;
+}
+.kingpinphoto{
+    border:10px outset gold;
+}
+.kingpintext{
+    background-color:#302f2c;
+    align-self: center;
+    display: inline-block;
+    width:auto;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.paka {
+    position: fixed;       /* menu nie znika */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;         /* Priorytet wyswietlania */
+    backdrop-filter: blur(5px);
+}
 
 
 /*body {
