@@ -1,7 +1,0 @@
-<img loading="lazy"> -> niewymagane, przyspiesza ladowanie stron
-<img dragging="false"> -> nie można przeciagac obrazka
-
-
-position: relative; -> punkt odwołania, czyli content wyrownuje się od rogu tego elementu a nie strony
-
-position: absolute; -> zostaje w tym danym miejscu nie przesuwa tekstu ani tekst jego itp, czyli np. można pisać po obrazku albo pod nim
